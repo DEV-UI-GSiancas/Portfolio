@@ -1,24 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {ApisInstance} from './common/util/Apis';
+import {Routers} from './routers';
+import axios from 'axios';
 
-function App() {
+// contexts
+import {AppContextProvider} from './common/util/Context';
+
+// components
+import {Header} from './common/components/header';
+import {Footer} from './common/components/footer';
+
+import './App.scss';
+
+const App = () => {
+
+  ApisInstance.init(
+    axios.create({baseURL: "http://localhost/software_store_api/apis/v1"})
+  );
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AppContextProvider>
+        <Header />
+          <Routers />
+        <Footer />
+      </AppContextProvider>
     </div>
   );
 }
