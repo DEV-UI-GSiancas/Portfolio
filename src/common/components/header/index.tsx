@@ -2,8 +2,8 @@ import './index.scss';
 
 export const Header = () => {
     return (
-        <header>
-            <p>header component</p>
+        <header className='header'>
+            <div className='icon'></div>
         </header>
     )
 }

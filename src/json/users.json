@@ -1,0 +1,67 @@
+{
+    "users": [
+        {
+            "userId": "asd-fgtt-34f-f44-fdf",
+            "name": "Britnnet Souls",
+            "photoUrl": "https://buzzaroundus.com/wp-content/uploads/2021/07/selfie-poses-ideas-for-girls.jpeg",
+            "photoId": 1,
+            "ratings": 132442,
+            "location": "Pasadena - California, Estados Unidos",
+            "category": 2
+        },
+        {
+            "userId": "asd-fgtt-34f3-f44-fdf",
+            "name": "Ariana Flakes",
+            "photoUrl": "https://cdn.shopify.com/s/files/1/0618/8873/files/plumpit_44370817_2138279109569760_3896538419589600128_n.jpg?v=1552313201",
+            "photoId": 2,
+            "ratings": 5442,
+            "location": "Los Angeles - California, Estados Unidos",
+            "category": 1
+        },
+        {
+            "userId": "asd-fgtt-34f3-f44-fdf",
+            "name": "Sofia Gutierrez",
+            "photoUrl": "https://i.blogs.es/68e68b/ester-exposito-selfie-no-makeup/450_1000.jpeg",
+            "photoId": 3,
+            "ratings": 442,
+            "location": "Tulum, Cuidad Mexico",
+            "category": 3
+        },
+        {
+            "userId": "asd-fgtt-34f-f44-fdf",
+            "name": "Zendaya Flaka",
+            "photoUrl": "https://i.pinimg.com/originals/ba/23/91/ba2391a6c158c9760fea9c432a927d9a.jpg",
+            "photoId": 4,
+            "ratings": 132442,
+            "location": "Pasadena - California, Estados Unidos",
+            "category": 2
+        },
+        {
+            "userId": "asd-fgtt-34f3-f44-fdf",
+            "name": "Fiorella Turner",
+            "photoUrl": "https://i.pinimg.com/564x/f3/db/0f/f3db0f43dbdd4a93b6b061caeef8757b.jpg",
+            "photoId": 5,
+            "ratings": 5442,
+            "location": "Los Angeles - California, Estados Unidos",
+            "category": 1
+        },
+        {
+            "userId": "asd-fgtt-34f3-f44-fdf",
+            "name": "Sofia Gutierrez",
+            "photoUrl": "https://whimsysoul.com/wp-content/uploads/2019/08/Whimsy-Soul-Beach-Instagram-Caption-102-800x1000.jpg",
+            "photoId": 6,
+            "ratings": 442,
+            "location": "Tulum, Cuidad Mexico",
+            "category": 3
+        },
+        {
+            "userId": "asd-fgtt-34f3-f44-fdf",
+            "name": "Sofia Gutierrez",
+            "photoUrl": "https://c4.wallpaperflare.com/wallpaper/799/918/385/water-new-zealand-lake-wanaka-mountain-lake-wallpaper-preview.jpg",
+            "photoId": 7,
+            "ratings": 37,
+            "location": "Tulum, Cuidad Mexico",
+            "category": 4
+        }
+    ]
+}

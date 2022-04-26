@@ -1,9 +1,26 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import {Avatar} from '../avatar';
+import {Search} from '../search';
+
 import './index.scss';
 
-export const Footer = () => {
+export const Footer = React.memo(() => {
+
     return (
-    <footer className='_footer'>
-        <p>footer section</p>
-    </footer>
+        <footer className='footer'>
+
+            <div className='groups'>
+                <Link to={'/settings'}>
+                    <Avatar url='' />
+                </Link>
+            </div>
+
+            <div className='groups'>
+                <Search />
+                <Link to={'/'} className='logo' />
+            </div>
+
+        </footer>
     );
-}
+})

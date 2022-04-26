@@ -1,0 +1,53 @@
+.chat{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.15);
+    background-color: #ffffff;
+    overflow: hidden;
+    height: 100%;
+
+    .block{
+        width: 100%;
+        box-sizing: border-box;
+
+        &.-top{
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+
+            .d-flex{
+                padding: 8px;
+            }
+        }
+
+        &.-middle{
+            flex-grow: 1;
+            width: 100%;
+            background-color: var(--colorLight);
+            overflow: auto;
+        }
+
+        &.-bottom{
+            padding: 8px;
+            padding-right: 0;
+            border-top: 1px solid rgba(0,0,0,0.05);
+            
+            .react-chosen{
+                background: var(--colorLight);
+                padding: 10px;
+                border-radius: 12px;
+                box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+                color: var(--colorBlackLight);
+                margin-bottom: 10px;
+            }
+
+            .react-list{
+                overflow: auto;
+                white-space: pre-wrap;
+                height: 140px;
+            }
+        }
+    }
+}

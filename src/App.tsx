@@ -4,12 +4,11 @@ import {Routers} from './routers';
 import axios from 'axios';
 
 // contexts
-import {AppContextProvider} from './common/util/Context';
+import {AppContextProvider} from './context/app';
+import {PopupContextProvider} from './context/popup';
+import {UserAccountContextProvider} from './context/user';
 
-// components
-import {Header} from './common/components/header';
-import {Footer} from './common/components/footer';
-
+// styles
 import './App.scss';
 
 const App = () => {
@@ -21,9 +20,11 @@ const App = () => {
   return (
     <div className="App">
       <AppContextProvider>
-        <Header />
-          <Routers />
-        <Footer />
+        <UserAccountContextProvider>
+          <PopupContextProvider>
+            <Routers />
+          </PopupContextProvider>
+        </UserAccountContextProvider>
       </AppContextProvider>
     </div>
   );

@@ -1,0 +1,26 @@
+.message{
+    box-sizing: border-box;
+    margin: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+
+    .message-header{
+
+        a{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            
+            i{
+                font-style: normal;
+                color: var(--colorNavy);
+            }
+        }
+    }
+
+    .message-body{
+        margin-top: 10px;
+    }
+}

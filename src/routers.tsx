@@ -4,14 +4,20 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from './pages/home';
 import { About } from './pages/about';
 
+// components
+// import {Header} from './common/components/header';
+import {Footer} from './common/components/footer';
+
 export const Routers = () => {
     return(
         <BrowserRouter>
-            <Routes>
-                <Route path={'/'} element={<Home/>} />
-                <Route path={'/home'} element={<Home/>} />
-                <Route path={'/about'} element={<About/>} />
-            </Routes>
+            {/* <Header /> */}
+                <Routes>
+                    <Route path={'/'} element={<Home/>} />
+                    <Route path={'/home'} element={<Home/>} />
+                    <Route path={'/about'} element={<About/>} />
+                </Routes>
+            <Footer />
         </BrowserRouter>
     )
 }

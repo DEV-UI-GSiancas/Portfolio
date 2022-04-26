@@ -1,0 +1,13 @@
+.avatar{
+   display: inline-block;
+   height: 45px;
+   width: 45px;
+   border-radius: 5px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+
+   &.--md{
+      transform: scale(0.75);
+   }
+}
