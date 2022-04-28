@@ -1,77 +1,60 @@
 .btn{
-    appearance: none;
-    -webkit-appearance: none;
-    display: inline-block;
-  
-    @mixin roundBtnStyle {
-      background-color: #ffffff;
-      border-radius: 50%;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
-      background-repeat: no-repeat;
-      background-position: center;
-      border: none;
-      cursor: pointer;
-      transition: all 0.35s;
-  
-      &:hover{
-        transform: scale(0.9);
-      }
-    }
-  
-    &.-react{
-      height: 65px;
-      width: 65px;
-      @include roundBtnStyle;
-    }
+  appearance: none;
+  -webkit-appearance: none;
+  display: inline-block;
 
-    &.-agree{
-      height: 54px;
-      width: 54px;
-      @include roundBtnStyle;
-  
-      background-image: url('../../../../assets/thumbs_up.png');
-      background-size: 28px;
-    }
+  @mixin roundBtnStyle {
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    transition: all 0.35s;
 
-    &.-disagree{
-      height: 54px;
-      width: 54px;
-      @include roundBtnStyle;
-      background-image: url('../../../../assets/thumbs_down.png');
-      background-size: 28px;
+    &:hover{
+      transform: scale(0.9);
     }
-
-    &.-location{
-      height: 40px;
-      width: 40px;
-      @include roundBtnStyle;
-  
-      background-image: url('../../../../assets/location.png');
-      background-size: 24px;
-      background-repeat: no-repeat;
-      background-position: center;
-      border: 2px solid var(--colorLavanda);
-  
-    }
-    &.-close{
-      height: 40px;
-      width: 40px;
-      @include roundBtnStyle;
-  
-      border: 2px solid var(--colorLavanda);
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 18px;
-      font-weight: 600;
-      color: var(--colorLavanda);
-    }
-
-    &.--sm{
-        transform: scale(0.5);
-    }
-
-    &.--md{
-      transform: scale(0.75);
   }
+
+  &.-react{
+    height: 65px;
+    width: 65px;
+    @include roundBtnStyle;
   }
+
+  &.-location{
+    height: 40px;
+    width: 40px;
+    @include roundBtnStyle;
+
+    background-image: url('../../../../assets/location.png');
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid var(--colorLavanda);
+  }
+
+  &.-close{
+    height: 40px;
+    width: 40px;
+    @include roundBtnStyle;
+
+    border: 2px solid var(--colorLavanda);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--colorLavanda);
+  }
+
+  &.--sm{
+      transform: scale(0.5);
+  }
+
+  &.--md{
+    transform: scale(0.75);
+  }
+}

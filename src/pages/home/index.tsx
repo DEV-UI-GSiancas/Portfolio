@@ -22,10 +22,7 @@ import "./index.scss";
 export const Home = () => {
 
     const _appContxt = React.useContext(AppContext);
-    const _popupContxt = React.useContext(PopupContext);
-
     const cards = _appContxt.handleGetter("cards");
-    const isChatActive = _popupContxt.currentActive;
 
     React.useEffect(() => {
         if(!cards.length){
@@ -40,7 +37,7 @@ export const Home = () => {
 
             <div className="col-wrap --vh">
                 <div className="col --40">
-                    <div className="inner-col">
+                    <div className="inner-col -transparent">
                         <div className="controllers">
                             <div className="control-box">
                                 <Location />
@@ -61,13 +58,15 @@ export const Home = () => {
                         </div>
                     </div>
                 </div>
+
                 <div className="col --60">
-                    <div className="inner-col">
+                    <div className="inner-col -transparent">
                         <Photo />
                     </div>
                 </div>
-                <div className="col --30" hidden={isChatActive !== 'chat-popup'}>
-                    <div className="inner-col">
+                
+                <div className="col --40">
+                    <div className="inner-col -transparent">
                         <Chat />
                     </div>
                 </div>

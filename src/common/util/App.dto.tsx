@@ -2,12 +2,12 @@ export interface CardI{
     avatar?: string;
     photoUrl: string;
     photoId: number;
+    category: number;
     ratings: number;
     ratedByMe: number;
     location: string;
     userId: string;
     name: string;
-    category: number;
 }
 
 export interface UserAccount {

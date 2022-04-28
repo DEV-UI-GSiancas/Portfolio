@@ -1,0 +1,26 @@
+.tag{
+    background-color: var(--colorLight);
+    color: var(--colorPink);
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 0 5px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.icon{
+    background-color: #ffffff;
+    display: inline-block;
+    border-right: 1px solid rgba(0,0,0,0.1);
+    height: 20px;
+    width: 20px;
+}
+
+.txt{
+    /* color: var(--colorPink); */
+    color: #242424;
+    font-weight: 600;
+    font-size: 10px;
+    padding: 2px 6px;
+    font-style: normal;
+}

@@ -5,6 +5,7 @@
   --colorNavy: #353577;
   --colorLavanda: #6866ff;
   --colorGreen: #74EBD5;
+  --colorPink: #FF99AC;
 
   background-color: var(--colorLight);
 }
@@ -20,7 +21,7 @@ body {
 
 .page{
   width: 95%;
-  max-width: 1450px;
+  max-width: 1250px;
   margin: auto;
 }
 
@@ -155,17 +156,17 @@ body {
 
 .--scrollable{
   &::-webkit-scrollbar {
-    width: 12px;
+    width: 10px;
   }
 
   &::-webkit-scrollbar-track {
-    background-color: rgb(230, 230, 230);
+    background-color: #e6e6e6;
     border-radius: 12px;
     margin: 10px;
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: rgb(177, 177, 177);
+    background-color: #cecece;
     border-radius: 12px;
   }
 }
