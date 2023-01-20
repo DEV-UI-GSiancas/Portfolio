@@ -1,23 +1,31 @@
 # CSS naming structure
 UI Name   |   -UI Type   |   --UI Modifier
 
-# UI types
--navigator
--header
--footer
--photo
--carrousel
--popup
--list
--cards
+# UI Name
+btn
+
+# UI Types
+btn
+    -location
 
 # UI Modifier
---center
-    centers children elements in the middle horizontaly
---center-all
-    centers children elements in the middle, horizontaly and vertically
---vertical
-    overflows elements in scroll vertically
+btn
+    -location
+        --sm
+
+# More Name/Types/Modifiers
+
+.d-flex:
+    display element in flex
+
+    --flx-center-all:
+        align-item:center / justify-content:center
+    --flx-center-between:
+        align-item:center / justify-content:between
+
+--scrollable:
+    make element scrollable and add style to scrollbar
+    
 --sm
 --md
 --lg

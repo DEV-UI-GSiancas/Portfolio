@@ -1,0 +1,31 @@
+.footer{
+    border-top: 1px solid var(--colorGrayLight);
+    margin: 0 25px;
+
+    &__link{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin: 15px 20px;
+
+        &--linkedin{
+            @extend .footer__link;
+            background-image: url("../../../assets/images/linkedin-48.png");
+        }
+        &--twitter{
+            @extend .footer__link;
+            background-image: url("../../../assets/images/twitter-48.png");
+        }
+        &--github{
+            @extend .footer__link;
+            background-image: url("../../../assets/images/github-48.png");
+        }
+        &--instagram{
+            @extend .footer__link;
+            background-image: url("../../../assets/images/instagram-48.png");
+        }
+    }
+}

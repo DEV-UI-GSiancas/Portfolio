@@ -1,15 +1,12 @@
-import React from 'react';
 import {ApisInstance} from './common/util/Apis';
-import {Routers} from './routers';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import axios from 'axios';
-
-// contexts
-import {AppContextProvider} from './context/app';
-import {PopupContextProvider} from './context/popup';
-import {UserAccountContextProvider} from './context/user';
-
+// pages
+import { HomePage } from './pages/home/Home';
+import { CartPage } from "./pages/cart/Cart";
 // styles
 import './App.scss';
+import { Footer } from './common/components/footer/Footer';
 
 const App = () => {
 
@@ -19,13 +16,13 @@ const App = () => {
 
   return (
     <div className="App">
-      <AppContextProvider>
-        <UserAccountContextProvider>
-          <PopupContextProvider>
-            <Routers />
-          </PopupContextProvider>
-        </UserAccountContextProvider>
-      </AppContextProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path={'/'} element={<HomePage/>} />
+          <Route path={'/cart'} element={<CartPage/>} />
+        </Routes>
+        <Footer/>
+      </BrowserRouter>
     </div>
   );
 }
