@@ -6,21 +6,22 @@ export enum ACTION_METHODS_CART {
     CHANGE_QUANTITY = "CHANGE_QUANTITY",
 }
 
-interface IItem {
+export interface IItemReducer {
     id: number,
     sku: number,
-    name: string,
+    title: string,
     description: string,
     quantity: number,
+    image: string;
 }
 
 interface IState {
-    items: IItem[],
+    items: IItemReducer[],
 }
 
 interface IAction {
     type: ACTION_METHODS_CART,
-    payload: IItem
+    payload: IItemReducer
 }
 
 const initialState: IState = {

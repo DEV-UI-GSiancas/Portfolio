@@ -1,0 +1,27 @@
+.cart-wrapper{
+    display: flex;
+    align-items: stretch;
+    box-sizing: border-box;
+    max-width: 1340px;
+    margin: auto;
+    gap: 30px;
+
+    &__column{
+        box-sizing: border-box;
+        overflow: auto;
+        padding: 15px;
+
+        &--left{
+            @extend .cart-wrapper__column;
+            width: 65%
+        }
+
+        &--right{
+            @extend .cart-wrapper__column;
+            height: 95vh;
+            position: sticky;
+            top: 0px;
+            width: 30%;
+        }
+    }
+}

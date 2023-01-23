@@ -1,28 +1,27 @@
-import {ApisInstance} from './common/util/Apis';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from 'axios';
+import { QueryClient, QueryClientProvider } from 'react-query';
 // pages
 import { HomePage } from './pages/home/Home';
 import { CartPage } from "./pages/cart/Cart";
+// components
+import { Footer } from './common/components/footer/Footer';
 // styles
 import './App.scss';
-import { Footer } from './common/components/footer/Footer';
 
 const App = () => {
-
-  ApisInstance.init(
-    axios.create({baseURL: "http://localhost/software_store_api/apis/v1"})
-  );
+  const queryClient = new QueryClient();
 
   return (
     <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path={'/'} element={<HomePage/>} />
-          <Route path={'/cart'} element={<CartPage/>} />
-        </Routes>
-        <Footer/>
-      </BrowserRouter>
+      <QueryClientProvider client={queryClient}>
+        <BrowserRouter>
+          <Routes>
+            <Route path={'/'} element={<HomePage/>} />
+            <Route path={'/cart'} element={<CartPage/>} />
+          </Routes>
+          <Footer/>
+        </BrowserRouter>
+      </QueryClientProvider>
     </div>
   );
 }
