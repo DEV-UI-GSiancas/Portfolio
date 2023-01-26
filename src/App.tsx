@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from 'react-query';
 // pages
 import { HomePage } from './pages/home/Home';
-import { CartPage } from "./pages/cart/Cart";
 // components
 import { Footer } from './common/components/footer/Footer';
 // styles
@@ -17,7 +16,6 @@ const App = () => {
         <BrowserRouter>
           <Routes>
             <Route path={'/'} element={<HomePage/>} />
-            <Route path={'/cart'} element={<CartPage/>} />
           </Routes>
           <Footer/>
         </BrowserRouter>

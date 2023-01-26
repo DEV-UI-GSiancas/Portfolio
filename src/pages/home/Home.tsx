@@ -21,7 +21,7 @@ export const HomePage = () => {
             </p>
             <p>Anyways, there much more to tell, but in this opportunity, He wants to share a small mini app called:</p>
             <h3>Cart With useReducer</h3>
-            <Link to={"cart"}>Click here to see mini-app</Link>
+            <Link to={"/"}>*INSERT LINK TO CODE*</Link>
         </div>
     )
 }
