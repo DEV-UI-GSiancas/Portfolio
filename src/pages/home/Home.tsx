@@ -1,10 +1,9 @@
-import classNames from "classnames";
 import { Link } from "react-router-dom";
 import style from "./Home.module.scss";
 
 export const HomePage = () => {
     return(
-        <div className={classNames("container")}>
+        <div className="container">
             <h1 className={style["home-header--thin"]}>
                 Gino Siancas - <strong>UI Developer</strong>
             </h1>

@@ -1,32 +1,9 @@
-# CSS naming structure
-UI Name   |   -UI Type   |   --UI Modifier
+# Gino Siancas - Portfolio
 
-# UI Name
-btn
+The branch **master** is used as the build template of my portfolio webiste (https://dev-gsiancas.com). 
 
-# UI Types
-btn
-    -location
+The branch **development** is the starting point for all implementation and code practice. Each branch name tries to be the most self-explainatory as possible. Ex:
 
-# UI Modifier
-btn
-    -location
-        --sm
+    branch name: cart-with-context-api-and-reducer 
 
-# More Name/Types/Modifiers
-
-.d-flex:
-    display element in flex
-
-    --flx-center-all:
-        align-item:center / justify-content:center
-    --flx-center-between:
-        align-item:center / justify-content:between
-
---scrollable:
-    make element scrollable and add style to scrollbar
-    
---sm
---md
---lg
---xl
+I applied SOLID principles for all code practice. The styling is with SASS modules and following the BEM Methodology.
