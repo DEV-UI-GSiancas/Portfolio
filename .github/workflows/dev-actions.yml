@@ -1,0 +1,10 @@
+name: Dev GitFlow Actions
+on: [push]
+jobs:
+  run-dev-actions:
+    runs-on: [linux@latest]
+    steps:
+      - name: Check manager tools versions
+        run: | 
+          npm --version
+          node --version
